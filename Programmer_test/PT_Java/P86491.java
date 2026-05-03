@@ -1,4 +1,4 @@
-public class Brute_Force_1 {
+public class P86491 {
     // 2020 카카오 인턴십 - 최소 직사각형
     public int solution(int[][] sizes) {
         int answer = 0;
@@ -29,7 +29,7 @@ public class Brute_Force_1 {
 
     // 테스트 케이스
     public static void main(String[] args) {
-        Brute_Force_1 bf = new Brute_Force_1();
+        P86491 bf = new P86491();
         System.out.println(bf.solution(new int[][]{{60, 50}, {30, 70}, {60, 30}, {80, 40}})); // 4000
         System.out.println(bf.solution(new int[][]{{10, 7}, {12, 3}, {5, 15}, {7, 8}})); // 120
         System.out.println(bf.solution(new int[][]{{14, 4}, {19, 6}, {6, 16}, {18, 7}, {7, 11}})); // 133

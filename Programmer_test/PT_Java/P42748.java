@@ -1,10 +1,10 @@
 import java.util.Arrays;
 
-public class Sorting_1 {
+public class P42748 {
     public static void main(String[] args) {
         int[] array = {1, 5, 2, 6, 3, 7, 4};
         int[][] commands = {{2, 5, 3}, {4, 4, 1}, {1, 7, 3}};
-        Sorting_1 s = new Sorting_1();
+        P42748 s = new P42748();
         int[] answer = s.solution(array, commands);
         for (int i : answer) {            
             System.out.println(i);

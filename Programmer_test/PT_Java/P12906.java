@@ -1,9 +1,9 @@
 import java.util.*;
 
-public class Stack_Queue_1 {
+public class P12906 {
     public static void main(String[] args) {
         int[] arr = {1,1,3,3,0,1,1};
-        Stack_Queue_1 T = new Stack_Queue_1();
+        P12906 T = new P12906();
         System.out.println(Arrays.toString(T.solution(arr)));
     }
 

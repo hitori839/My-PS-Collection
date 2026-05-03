@@ -2,12 +2,12 @@
 import java.util.HashMap;
 import java.util.Map;
 
-public class Hash_1 {
+public class P42576 {
     public static void main(String[] args) {
        String [] participant = {"leo", "kiki", "eden"};
        String [] completion = {"eden", "kiki"};
-       Hash_1 hash_1 = new Hash_1();
-       System.out.println(hash_1.solution(participant, completion));
+       P42576 p42576 = new P42576();
+       System.out.println(p42576.solution(participant, completion));
     }
 
     public String solution(String[] participant, String[] completion) {
