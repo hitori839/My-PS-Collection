@@ -6,29 +6,26 @@ public class P12921 {
         System.out.println(T.solution(1000000));
     }
 
+    //에라토스테네스의 체 사용
     public int solution(int n) {
-        int answer = 1;
-        int yn = 0;
-        int[] a = {2};
-        for (int i = 3; i <= n; i++) {
-            yn = 0;
-            for (int j = 0; j < a.length; j++) {
-                if (i % a[j] == 0) {
-                    yn = 1;
-                    break;
-                }
-            }
-            if (yn == 1)
-                continue;
-            else {
+        // 자동으로 기본값 false
+        boolean[] check = new boolean[n+1];
+        int answer = 0;
+        for (int i = 2; i <= n; i++) {
+            if (check[i] == false) {
                 answer += 1;
-                int[] temp = new int[a.length + 1];
-                for (int j = 0; j < a.length; j++) {
-                    temp[j] = a[j];
+                int temp = i;
+                while (temp <= n) {
+                    if (check[temp] == false) {
+                        check[temp] = true;
+                        temp += i;
+                    }
+                    else
+                        temp += i;
                 }
-                temp[a.length] = i;
-                a = temp;
             }
+            else
+                continue;
         }
         return answer;
     }
